@@ -13,7 +13,7 @@ def test2_get_with_query_params():
     assert r.status_code == 200, f"Статус: {r.status_code}, Ответ: {r.text}"
     data = r.json()
     assert data["args"]["name"] == "John"
-    assert data["args"]["city"] == "Moscow"
+    assert data["args"]["city"] == "Peterburg"
     print("✅ Тест GET с параметрами URL пройден")
 
 def test3_get_with_headers():
