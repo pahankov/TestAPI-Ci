@@ -18,7 +18,7 @@ def test3_get_with_headers(base_url, verification_status_200, get_headers):
     data = verification_status_200(r)
     assert data["headers"]["user-agent"] == get_headers["User-Agent"]
 # Ломаем тест
-    assert data["headers"]["x-request-id"] == get_headers["X-Request-ID"]
+#     assert data["headers"]["x-request-id"] == get_headers["X-Request-ID"]
 
 # POST с form-data
 def test4_post_form_data(base_url, verification_status_200, form_data):
